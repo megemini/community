@@ -932,8 +932,9 @@ In [37]: %timeit me_paddle = matrix_exp(m_paddle)
 
 | 框架 | 2\*2 | 48\*48 | 8\*32\*32\*32 |
 | - | - | - | - |
-| Scipy | 33.3 µs ± 424 ns | 109 µs ± 1.4 µs | 12.5 ms ± 158 |
+| Scipy | 33.3 µs ± 424 ns | 109 µs ± 1.4 µs | 12.5 ms ± 158 µs |
 | PyTorch(cpu) | 48.6 µs ± 543 ns | 129 µs ± 1.7 µs | 11.8 ms ± 117 µs |
+| PyTorch(gpu) | 106 µs ± 25.6 µs | 145 µs ± 146 ns | 9.89 ms ± 21.3 µs |
 | Tensorflow(cpu) | 3.17 ms ± 69.9 µs | 3.74 ms ± 33.8 µs | 38.8 ms ± 1.99 ms |
 | Tensorflow(gpu) | 4.8 ms ± 69 µs | 5.39 ms ± 44.9 µs | 20.4 ms ± 898 µs |
 | Paddle(cpu) | 598 µs ± 9.21 µs | 1.1 ms ± 15.6 µs | 49.6 ms ± 809 µs |
